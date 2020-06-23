@@ -14,9 +14,6 @@ fields:
 - type: text
   name: image3
   label: image3
-- type: text
-  name: image4
-  label: image4
 - type: file
   name: cartImage
   label: cartImage
