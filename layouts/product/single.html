@@ -1,0 +1,50 @@
+
+<head>
+ 
+  {{ partial "header.html" . }}
+{{ partial "producthead.html" . }} 
+{{ $style := resources.Get "css/productpage.css"}}
+{{ partial "sizeselection.html" .}}
+<link rel="stylesheet" href="{{ $style.Permalink }}">
+</head>
+
+  <script>
+
+ 
+</script>
+ 
+
+
+<div class="main" id="main">
+<div class="split left">
+  <div class="mobiletext"> 
+    <div class="name"> {{ .Params.name }} - {{.Params.Price}} CAD </div>
+    <div class="description" > {{ .Params.shortDescription }}</div>
+
+  <div id='product-component-1592325681305'></div>
+  </div>
+<img class="product-image one" src="{{ .Params.image}}"  alt=""> 
+
+<img class="product-image two" src="{{ .Params.image2}}"  alt=""> 
+</div>
+
+
+<div class="split right">
+  <div class="centered">
+    <div class="name"> {{ .Params.name }}  </div>
+    <div class="price"> {{.Params.Price}} CAD </div>
+    <div class="description" > {{ .Params.shortDescription }}</div>
+
+
+  
+  
+  
+  <div id='product-component-1592325681305'></div>
+</div>
+</div>
+</div>
+
+  
+</div>
+
+<footer>{{ partial "footer.html" . }}</footer>

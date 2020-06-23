@@ -1,0 +1,51 @@
+[
+  {
+    "id": "apple_tee",
+    "name": "Apple Tee",
+    "price": 29.95,
+    "image": "/img/appletee.png",
+    "description": "descriptioin",
+    "product_url": "/shop/apple_tee"
+   
+  }, 
+  {
+    "id": "black_tote",
+    "name": "Black Tote",
+    "price": 29.95,
+    "image": "/img/blacktote.png",
+    "description": "descriptioin",
+    "product_url": "/shop/black_tote"
+  },
+  {
+    "id": "ibm_Tee",
+    "name": "IBM TEE",
+    "price": 14.95,
+    "image": "/img/IBM.png",
+    "description": "descriptioin",
+    "product_url": "/shop/ibm_tee"
+  },
+  {
+    "id": "canvas_tote",
+    "name": "Canvas Tote",
+    "price": 29.95,
+    "image": "/img/canvastote.png",
+    "description": "descriptioin",
+    "product_url": "/shop/canvastote2"
+  },
+  {
+    "id": "pleasure_cap",
+    "name": "Pleasure Cap",
+    "price": 29.95,
+    "image": "/img/pleasurecap.jpg",
+    "description": "descriptioin",
+    "product_url": "/shop/pleasurecap"
+  },
+  {
+    "id": "navy_bucket",
+    "name": "Navy Bucket",
+    "price": 19.95,
+    "image": "/img/navy bucket.jpg",
+    "description": "descriptioin",
+    "product_url": "/shop/navybucket2"
+  }
+]
