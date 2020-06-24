@@ -4,10 +4,9 @@ image: "/img/IBM.png"
 image2: "/img/ibm-tee2.jpeg"
 image3: 
 image4:
-cartImage: "/img/IBM.png"
-shortDescription: "100% COTTON ,  10 OZ"
+shortDescription: "100% 10oz Cotton"
 price: 30
-id: "5298432180377"
+id: "5320115028128"
 url: "/shop/ibm_tee"
 ---
 
