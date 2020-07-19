@@ -2,25 +2,20 @@
 * {
   box-sizing: border-box;
 }
-.html{
+body, html {
   height: 100%;
-  width: 100%;
-}
-body{
+  margin: 0;
+  font-family: Arial;
   padding: 0;
-
+ 
 }
-
 body {
   margin: 0;
   font-family: Arial;
 }
 
   
-.logo {
-  text-align: center;
-  padding: 32px; 
-}
+
 /* ------HEADER LOGO SPIN---------*/
 .templogo:hover{
   animation-name: logospin;
@@ -39,29 +34,32 @@ animation-timing-function: linear;
   }
 }
 
-/* --------NAV BAR ----------*/
-
+/* GRID FLEXBOX*/
 
 .products {
   position: relative;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: center;
+  justify-content: left;
   align-items: flex-start;
 overflow: hidden;
  
 }
-
+.product-card{
+  border-top: 0.5px solid black;
+  border-right: 0.5px solid black;
+  border-bottom: 0.5px solid black;
+  padding: 5px;
+}
   
  .product-card:hover {
     border: 1px solid #7FFF00;
   }
 
-
   .product-name{
     font-size: 14px;
-    text-align: left;
+    text-align: center;
 
       }
 .product-price {
@@ -75,25 +73,22 @@ position: relative;
 border: none;
   
   }
-
+  #smallbox {
+    cursor: pointer;
+}
 
 
 
 
   @media (min-width: 300px){
     .product-card{
-      flex: 1 50%;
-      border-right: black solid 1px;
-      border-bottom: black solid 1px;
+      flex: 0 50%;
+      
     }
-  
-   
   
   }
 
-  #smallbox {
-    cursor: pointer;
-}
+
 @media (min-width: 768px) /* Tablet */ { 
 
   .main{
@@ -107,7 +102,7 @@ border: none;
    
     .product-card{
       flex: 1 50%;
-      
+      flex-grow: 0;
      overflow: hidden;
     }
 
@@ -120,7 +115,7 @@ border: none;
     }
     .product-card{
       flex: 1 33.33%;
-      
+      flex-grow: 0;
      
     }
 }

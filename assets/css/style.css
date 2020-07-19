@@ -1,52 +1,27 @@
 
 /* CSS Document */
-.toplogo{
-position: relative;
 
-}
 body, html {
   height: 100%;
   margin: 0;
-  font-family: Helvetica;
+  font-family: Arial;
   padding: 0;
  
 }
 /* navigation bar */ 
+.weblogo{
+  display: block;
+margin-left: auto;
+margin-right: auto;
+z-index: 11999;
+height: 100px;
+width: 200px;
+}
 .main{
   margin-top: 1em;
   
   }
-.navbar #headimg{
-  width: 50%;
-position: relative;
-left: 25%;
-top: 0px;
-}
 
-#navid{
-  display: none;
-  margin-top: 130px;
-}
-
-.navitems li:last-child{
-  border-right: none;
-
-}
-.navitems a{
-  
-  display: block;
-  color: rgb(0, 47, 255);
-  text-align: center;
-  padding: 10px 10px;
-  text-decoration: none;
-  font-size: 17px;
-  border-left: black solid 1px;
-  border-right: black solid 1px;
-  border-top: black solid 1px;
-  border-bottom: black solid 1px;
-  background-color: white;
-  width: 100%;
-}
 
 .navitems {
   list-style-type: none;
@@ -54,8 +29,9 @@ top: 0px;
   padding: 0;
   overflow: hidden;
   text-align: center;
-  background-color: white; 
+  
   display: block;
+  
 }
 .buttonclick{
   z-index: 10000;
@@ -63,92 +39,173 @@ top: 0px;
   position: relative;
 }
 .navbar{
+  display: none;
 overflow: hidden;
 position: absolute;
 top: 0;
-width: 100%;
 z-index: 999;
 }
-.navitems a:hover{
-  background-color: coral;
-}
-.navitems a{
+.navitems li a{
 
 display: block;
-color: rgb(0, 47, 255);
+color: #1d31e7;
 text-align: center;
 padding: 10px 10px;
 text-decoration: none;
-font-size: 17px;
-border-right: black solid 1px;
-border-top: black solid 1px;
-border-bottom: black solid 1px;
-background-color: white;
-width: 100%;
+font-size: 20px;
+font-weight: 500;
+border-left: #fffb00 solid 1px;
+border-right: #fffb00 solid 1px;
+border-top: #fffb00 solid 1px;
+border-bottom: #fffb00 solid 1px;
 }
 
-@media (min-width: 767px) /*tablet and above */ {
-  #navid{
+@media (min-width: 300px) /*tablet and above */ {
+
+  .toplogo{
+    position:relative;
     display: block;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 1000;
   }
+ 
   .buttonclick{
    display: none;
   }
   .navbar{
-   
-    width: auto;
-text-align: center;
-margin: 0 auto;
-  }
-  .navitems{
+    display: block;
+    margin-top: 0;
+  width: auto;
+    position:relative;
     
-    margin: 0 auto;
   }
+
+  .navitems{
+    padding: 0;
+    
+    list-style: none;
+   margin: 0 auto;
+   text-align: center;
+  }
+ 
  .navitems li {
-float: left;
-  border-right:1px solid #bbb;
+
+  
+  display:inline-block;
   
 }
 
-li:last-child {
-  border-right: none;
-}
-
-li a {
+.navitems li a {
   display: block;
-  color: white;
   text-align: center;
-  padding: 14px 16px;
   text-decoration: none;
-width: 150px;
 }
 
-li a:hover:not(.active) {
+.navitems li a:hover {
   background-color: rgb(229, 255, 112);
+  font-weight: bolder;
 }
 
 .active {
   background-color: #4CAF50;
 }
                        
-
 }
-
-/* background images */
 .bg-image {
   /* Full height */
-  max-width: 100%;
-	height: 65%;
+  
 
   /* Center and scale the image nicely */
   background-position: center center;
   background-repeat: no-repeat;
   background-size:contain;
+
+}
+
+
+
+@media (min-width: 250px){
+.bg-image{
+height: 47%;
+  margin-bottom: 2vh;
+}
+}
+@media (min-width:408px){
+  .bg-image{
+    height: 50%;
+    margin-bottom: 2vh;
+  }
+}
+@media (min-width:650px){
+  .bg-image{
+    
+    margin-bottom: 2vh;
+  }
+}
+@media (min-width: 992px) /*desktop */   {
+  .bg-image{
+    height: 50%;
+     margin-bottom: 2vh;
+   }
+  .toplogo{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 1999;
+  }
+
  
+  .buttonclick{
+   display: none;
+  }
+  .navbar{
+    display: block;
+    margin-top: 0;
+  width: auto;
+    position:relative;
+    
+  }
+
+  .navitems{
+    padding: 0;
+    
+    list-style: none;
+   margin: 0 auto;
+   text-align: center;
+  }
  
+ .navitems li {
+
+  
+  display:inline-block;
+  
+}
+
+.navitems li a {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+width: 90px;
+
+}
+
+.navitems li a:hover {
+  background-color: rgb(229, 255, 112);
+  font-weight: bolder;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+                 
+         
+
 }
 
 /* ------BACKGROUND IMAGE---------*/
+/* background images */
 
 .img1 { background-image: url("/img/inspo1.png");
 
@@ -173,7 +230,7 @@ li a:hover:not(.active) {
   .animg{
     animation-name: animg2;
     position: fixed;
-    top: 35%;
+    top: 50%;
     left: 50%;
     margin-top: -155px;
     margin-left: -240px;
@@ -214,7 +271,7 @@ li a:hover:not(.active) {
 
 
 
-@media only screen and (min-width:768px)  {
+@media only screen and (min-width:767px)  {
 .animg{
 	animation-name: animg;
 	position: fixed;
@@ -283,5 +340,4 @@ li a:hover:not(.active) {
     -moz-transform: translate(-560px, -560px) rotate(180deg);
   }
 }
-
 }

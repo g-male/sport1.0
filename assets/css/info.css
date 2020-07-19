@@ -1,0 +1,21 @@
+
+
+@media screen and  (min-width: 768px){
+    .split{
+        height: 100%;
+        width: 50%;
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        overflow-x: hidden;
+       }
+      .left{
+      left: 0;
+    
+     }
+      
+      .right{
+        display: block;
+      right: 0;
+      }
+}

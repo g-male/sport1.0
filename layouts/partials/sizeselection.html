@@ -1,4 +1,4 @@
-<div id='product-component-1592940603845'></div>
+<div id='product-component-1594604439669'></div>
 <script type="text/javascript">
 /*<![CDATA[*/
 (function () {
@@ -26,9 +26,9 @@
     });
     ShopifyBuy.UI.onReady(client).then(function (ui) {
       ui.createComponent('product', {
-        id: '{{ .Params.id }}',
-        node: document.getElementById('product-component-1592940603845'),
-        moneyFormat: 'FCFA%7B%7Bamount%7D%7D',
+        id: '{{.Params.id}}',
+        node: document.getElementById('product-component-1594604439669'),
+        moneyFormat: '%24%7B%7Bamount%7D%7D',
         options: {
   "product": {
     "styles": {
@@ -41,26 +41,26 @@
       },
       "button": {
         "font-family": "Arial, sans-serif",
-        "font-size": "14px",
-        "padding-top": "15px",
-        "padding-bottom": "15px",
-        "color": "#0026ff",
+        "font-size": "18px",
+        "padding-top": "17px",
+        "padding-bottom": "17px",
+        "color": "#1d31e7",
         ":hover": {
-          "color": "#0026ff",
-          "background-color": "#c1bbbb"
+          "color": "#1d31e7",
+          "background-color": "#e6e200"
         },
-        "background-color": "#d6d0d0",
+        "background-color": "#fffb00",
         ":focus": {
-          "background-color": "#c1bbbb"
+          "background-color": "#e6e200"
         },
-        "border-radius": "5px",
-        "padding-left": "100px",
-        "padding-right": "100px"
+        "border-radius": "0px",
+        "padding-left": "49px",
+        "padding-right": "49px"
       },
       "quantityInput": {
-        "font-size": "14px",
-        "padding-top": "15px",
-        "padding-bottom": "15px"
+        "font-size": "18px",
+        "padding-top": "17px",
+        "padding-bottom": "17px"
       }
     },
     "contents": {
@@ -69,7 +69,7 @@
       "price": false
     },
     "text": {
-      "button": "Add to cart"
+      "button": "Add to Cart"
     }
   },
   "productSet": {
@@ -98,77 +98,169 @@
       },
       "button": {
         "font-family": "Arial, sans-serif",
-        "font-size": "14px",
-        "padding-top": "15px",
-        "padding-bottom": "15px",
-        "color": "#0026ff",
+        "font-size": "18px",
+        "padding-top": "17px",
+        "padding-bottom": "17px",
+        "color": "#1d31e7",
         ":hover": {
-          "color": "#0026ff",
-          "background-color": "#c1bbbb"
+          "color": "#1d31e7",
+          "background-color": "#e6e200"
         },
-        "background-color": "#d6d0d0",
+        "background-color": "#fffb00",
         ":focus": {
-          "background-color": "#c1bbbb"
+          "background-color": "#e6e200"
         },
-        "border-radius": "5px",
-        "padding-left": "100px",
-        "padding-right": "100px"
+        "border-radius": "0px",
+        "padding-left": "49px",
+        "padding-right": "49px"
       },
       "quantityInput": {
-        "font-size": "14px",
-        "padding-top": "15px",
-        "padding-bottom": "15px"
+        "font-size": "18px",
+        "padding-top": "17px",
+        "padding-bottom": "17px"
       }
     },
     "text": {
       "button": "Add to cart"
     }
   },
+  "option": {
+    "styles": {
+      "label": {
+        "font-family": "Arial, sans-serif"
+      },
+      "select": {
+        "font-family": "Arial, sans-serif"
+      }
+    }
+  },
   "cart": {
     "styles": {
       "button": {
         "font-family": "Arial, sans-serif",
-        "font-size": "14px",
-        "padding-top": "15px",
-        "padding-bottom": "15px",
-        "color": "#0026ff",
+        "font-size": "18px",
+        "padding-top": "17px",
+        "padding-bottom": "17px",
+        "color": "#1d31e7",
         ":hover": {
-          "color": "#0026ff",
-          "background-color": "#c1bbbb"
+          "color": "#1d31e7",
+          "background-color": "#e6e200"
         },
-        "background-color": "#d6d0d0",
+        "background-color": "#fffb00",
         ":focus": {
-          "background-color": "#c1bbbb"
+          "background-color": "#e6e200"
         },
-        "border-radius": "5px"
+        "border-radius": "0px"
+      },
+      "title": {
+        "color": "#1d31e7"
+      },
+      "header": {
+        "color": "#1d31e7"
+      },
+      "lineItems": {
+        "color": "#1d31e7"
+      },
+      "subtotalText": {
+        "color": "#1d31e7"
+      },
+      "subtotal": {
+        "color": "#1d31e7"
+      },
+      "notice": {
+        "color": "#1d31e7"
+      },
+      "currency": {
+        "color": "#1d31e7"
+      },
+      "close": {
+        "color": "#1d31e7",
+        ":hover": {
+          "color": "#1d31e7"
+        }
+      },
+      "empty": {
+        "color": "#1d31e7"
+      },
+      "noteDescription": {
+        "color": "#1d31e7"
+      },
+      "discountText": {
+        "color": "#1d31e7"
+      },
+      "discountIcon": {
+        "fill": "#1d31e7"
+      },
+      "discountAmount": {
+        "color": "#1d31e7"
       }
     },
     "text": {
+      "title": "Cart ",
       "total": "Subtotal",
+      "empty": "Cart = empty ;",
       "button": "Checkout"
-    }
+    },
+    "popup": false
   },
   "toggle": {
     "styles": {
       "toggle": {
         "font-family": "Arial, sans-serif",
-        "background-color": "#d6d0d0",
+        "background-color": "#fffb00",
         ":hover": {
-          "background-color": "#c1bbbb"
+          "background-color": "#e6e200"
         },
         ":focus": {
-          "background-color": "#c1bbbb"
+          "background-color": "#e6e200"
         }
       },
       "count": {
-        "font-size": "14px",
-        "color": "#0026ff",
+        "font-size": "18px",
+        "color": "#1d31e7",
         ":hover": {
-          "color": "#0026ff"
+          "color": "#1d31e7"
         }
       },
       "iconPath": {
-        "fill": "#0026ff"
+        "fill": "#1d31e7"
+      }
+    }
+  },
+  "lineItem": {
+    "styles": {
+      "variantTitle": {
+        "color": "#1d31e7"
+      },
+      "title": {
+        "color": "#1d31e7"
+      },
+      "price": {
+        "color": "#1d31e7"
+      },
+      "fullPrice": {
+        "color": "#1d31e7"
+      },
+      "discount": {
+        "color": "#1d31e7"
+      },
+      "discountIcon": {
+        "fill": "#1d31e7"
+      },
+      "quantity": {
+        "color": "#1d31e7"
+      },
+      "quantityIncrement": {
+        "color": "#1d31e7",
+        "border-color": "#1d31e7"
+      },
+      "quantityDecrement": {
+        "color": "#1d31e7",
+        "border-color": "#1d31e7"
+      },
+      "quantityInput": {
+        "color": "#1d31e7",
+        "border-color": "#1d31e7"
       }
     }
   }

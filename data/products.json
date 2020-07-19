@@ -3,8 +3,8 @@
     "id": "5320263041184",
     "name": "D&G Pocket Longsleeve",
     "price": 40,
-    "image": "/img/dglongsleeve_back copy.png",
-    "product_url": "/shop/apple_tee"
+    "image": "/img/dglongsleeve_back.png",
+    "product_url": "/shop/dg_longsleeve"
   }, 
   {
     "id": "5320113619104",
@@ -17,7 +17,7 @@
     "id": "5320130855072",
     "name": "Black Macintosh Tee",
     "price": 30,
-    "image": "/img/ blacksport_copy.png",
+    "image": "/img/blacksport.png",
     "product_url": "/shop/macintosh_tee-black"
   }, 
   {
@@ -60,7 +60,7 @@
     "name": "Beige Bucket Hat",
     "price": 25,
     "image": "/img/beige bucket.jpg",
-    "product_url": "/shop/navy_bucket"
+    "product_url": "/shop/beige_bucket"
   },
   {
     "id": "5320343617696",
