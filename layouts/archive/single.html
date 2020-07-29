@@ -1,8 +1,9 @@
 <head>
-    {{ partial "header.html" . }}
-    {{ $style := resources.Get "/css/archive.css"}}
+      {{ partial "header.html" . }}
     {{ partial "producthead.html" . }} 
+    {{ $style := resources.Get "/css/archive.css"}}
     <link rel="stylesheet" href="{{ $style.Permalink }}">
+ 
 </head>
 <body>
     
