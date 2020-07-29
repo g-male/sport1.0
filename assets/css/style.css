@@ -14,7 +14,7 @@ body, html {
 margin-left: auto;
 margin-right: auto;
 z-index: 11999;
-height: 100px;
+height: 50px;
 width: 200px;
 }
 .main{
@@ -33,6 +33,9 @@ width: 200px;
   display: block;
   
 }
+li{ 
+  margin: 7px ;
+}
 .buttonclick{
   z-index: 10000;
   display: block;
@@ -43,7 +46,7 @@ width: 200px;
 overflow: hidden;
 position: absolute;
 top: 0;
-z-index: 999;
+z-index: 9999;
 }
 .navitems li a{
 
@@ -52,12 +55,12 @@ color: #1d31e7;
 text-align: center;
 padding: 10px 10px;
 text-decoration: none;
-font-size: 20px;
-font-weight: 500;
-border-left: #fffb00 solid 1px;
-border-right: #fffb00 solid 1px;
-border-top: #fffb00 solid 1px;
-border-bottom: #fffb00 solid 1px;
+font-size: 1.3em;
+font-weight: bold;
+border-left: #fffb00 solid 3px;
+border-right: #fffb00 solid 3px;
+border-top: #fffb00 solid 3px;
+border-bottom: #fffb00 solid 3px;
 }
 
 @media (min-width: 300px) /*tablet and above */ {
@@ -103,7 +106,7 @@ border-bottom: #fffb00 solid 1px;
 }
 
 .navitems li a:hover {
-  background-color: rgb(229, 255, 112);
+  background-color:#fffb00;
   font-weight: bolder;
 }
 
@@ -162,7 +165,7 @@ height: 47%;
   .navbar{
     display: block;
     margin-top: 0;
-  width: auto;
+
     position:relative;
     
   }
@@ -187,7 +190,7 @@ height: 47%;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-width: 90px;
+width: 160px;
 
 }
 
@@ -235,7 +238,7 @@ width: 90px;
     margin-top: -155px;
     margin-left: -240px;
    
-    animation-duration: 10000ms;
+    animation-duration: 8500ms;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
   }
@@ -281,7 +284,7 @@ width: 90px;
   margin-top: -155px;
   margin-left: -240px;
 
-	animation-duration:50000ms;
+	animation-duration:70000ms;
 	animation-iteration-count: infinite;
 	
   animation-timing-function: linear; 

@@ -21,10 +21,11 @@
 <img class="product-image one" src="{{ .Params.image}}"  alt=""> 
 
 <div class="mobiletext"> 
-  <p class="name"> {{ .Params.name }} - {{.Params.Price}} CAD </p>
-  <p class="description" > {{ .Params.shortDescription | safeHTML }}</p>
+  <div class="name"> {{ .Params.name }} - {{.Params.Price}} CAD <br></div>
+  <div class="description" > {{ .Params.shortDescription | safeHTML }} <br> </div>
+  <br>
   {{ partial "mbl_sizeselection.html" . }}
-  <div id='product-component-1595195330623'></div>
+  
 </div>
 
 </div>
@@ -37,7 +38,7 @@
     <p class="description" > {{ .Params.shortDescription }}</p>
 
 {{ partial "sizeselection.html" . }}
-<div id='product-component-1594604439669'></div>
+
 
  
 </div>
@@ -45,6 +46,5 @@
 
 
 </div>
-
-<div class="footer">{{ partial "footer.html" . }}</div>
+{{ partial "footer.html" . }}
 
